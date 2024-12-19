@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ui design</title>
+		<!-- Style css -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- Boxicons -->
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<!-- Form -->
+			<div class="form__container container">
+				<form action="" class="form__container">
+					<div class="form__login">
+						<h1 class="form__title">Login in</h1>
+
+						<input
+							class="form__input"
+							type="text"
+							placeholder="Enter email"
+							name="email"
+							required
+						/>
+						<br />
+						<input
+							class="form__input"
+							type="password"
+							minlength="6"
+							placeholder="Enter password"
+							name="pass"
+							required
+						/>
+						<br />
+						<button type="submit" class="button__login">Log in</button>
+					</div>
+
+					<span class="form__span">Or</span>
+
+					<div class="form__social">
+						<ul class="form__list">
+							<li class="form__item">
+								<i class="bx bxl-google"></i>
+								Continue with Google
+							</li>
+							<li class="form__item">
+								<i class="bx bxl-microsoft"></i>
+								Continue with Microsoft
+							</li>
+							<li class="form__item">
+								<i class="bx bxl-apple"></i>
+								Continue with Apple
+							</li>
+						</ul>
+
+						<a href="#" class="form__text">Can't log in?</a>
+						<a href="#" class="form__text">Already have an acount?</a>
+					</div>
+				</form>
+			</div>
+
+			<!-- Person Card -->
+			<div class="person__container container">
+				<div class="person__content">
+					<i class="bx bx-menu menu-bar"></i>
+					<img src="../img/developer-8.jpg" alt="person" class="person__img" />
+					<p class="person__name">John Doe</p>
+					<a href="" class="person__geo">
+						<i class="bx bxs-map"></i>
+						Atlanta, GA
+					</a>
+					<button class="person__button">View Content</button>
+				</div>
+			</div>
+
+			<!-- Payments service cards -->
+			<div class="service__container container" id="service">
+				<div class="service__cards">
+					<!-- 1 -->
+					<div class="service__card">
+						<h2 class="service__card-title">Free</h2>
+						<h1 class="service__price">
+							<span class="service__dollar">$</span>
+							0
+						</h1>
+						<span class="service__span"> Free for your whole team </span>
+						<br />
+
+						<p class="service__description">
+							For individuals or team, looking to organize anything
+						</p>
+						<button class="service__button-1">Get Started</button>
+					</div>
+					<!-- 2 -->
+					<div class="service__card">
+						<h2 class="service__card-title">Standart</h2>
+						<h1 class="service__price">
+							<span class="service__dollar">$</span>
+							6
+						</h1>
+						<span class="service__span"> Per user per month </span>
+						<br />
+
+						<p class="service__description">
+							For teams that need to manage more work.
+						</p>
+						<button class="service__button-2">Upgrade now</button>
+					</div>
+					<!-- 3 -->
+					<div class="service__card">
+						<h2 class="service__card-title">Premium</h2>
+						<h1 class="service__price">
+							<span class="service__dollar">$</span>
+							12
+						</h1>
+						<span class="service__span"> Per user per month </span>
+						<br />
+
+						<p class="service__description">
+							Best for teamsh that need to track multiple projects.
+						</p>
+						<button class="service__button-3">Try for free</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Payments -->
+
+			<div class="payments__container container">
+				<div class="payments__header">
+					<h3 class="payment__title">Payments</h3>
+					<p class="payment__subtitle">Manage your payments.</p>
+				</div>
+
+				<div class="payments__filters">
+					<div>
+						<input
+							type="text"
+							class="payment__input"
+							placeholder="Filter emails..."
+						/>
+					</div>
+
+					<div>
+						<select name="Columns" id="columns" class="payment__select">
+							<option value="value1">Columns</option>
+							<option value="value2">Status</option>
+							<option value="value3">Email</option>
+							<option value="value4">Amount</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="payment__content">
+					<!-- 1 -->
+					<div class="payment__box" id="payment__box-main">
+						<div class="payment__info">
+							<label class="checkbox__container">
+								<input type="checkbox" />
+								<span class="checkbox__span">Status</span>
+							</label>
+						</div>
+
+						<div>
+							<label class="checkbox__container">
+								<span class="checkbox__span">
+									Email
+									<i class="bx bx-sort"></i>
+								</span>
+							</label>
+						</div>
+
+						<div>
+							<span class="checkbox__span"> Amount </span>
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="payment__box">
+						<div class="payment__info">
+							<label class="checkbox__container" id="checkbox__status">
+								<input type="checkbox" />
+								<span class="checkbox__span">Success</span>
+							</label>
+						</div>
+
+						<div>
+							<label class="checkbox__container" id="checkbox__email">
+								<span class="checkbox__span-email"> ken99@yahoo.com </span>
+							</label>
+						</div>
+
+						<div>
+							<span class="checkbox__span-amount" id="checkbox__amount">
+								$316.00
+							</span>
+						</div>
+					</div>
+					<!-- 3 -->
+					<div class="payment__box">
+						<div class="payment__info">
+							<label class="checkbox__container" id="checkbox__status">
+								<input type="checkbox" />
+								<span class="checkbox__span">Status</span>
+							</label>
+						</div>
+
+						<div>
+							<label class="checkbox__container" id="checkbox__email">
+								<span class="checkbox__span-email"> Abe45@gmail.com </span>
+							</label>
+						</div>
+
+						<div>
+							<span class="checkbox__span-amount" id="checkbox__amount">
+								$242.00
+							</span>
+						</div>
+					</div>
+					<!-- 4 -->
+					<div class="payment__box">
+						<div class="payment__info">
+							<label class="checkbox__container" id="checkbox__status">
+								<input type="checkbox" />
+								<span class="checkbox__span">Status</span>
+							</label>
+						</div>
+
+						<div>
+							<label class="checkbox__container" id="checkbox__email">
+								<span class="checkbox__span-email">
+									Monserrat44@gmail.com
+								</span>
+							</label>
+						</div>
+
+						<div>
+							<span class="checkbox__span-amount" id="checkbox__amount">
+								$837.00
+							</span>
+						</div>
+					</div>
+					<!-- 5 -->
+					<div class="payment__box" id="payment__box-last">
+						<div class="payment__info">
+							<label class="checkbox__container" id="checkbox__status">
+								<input type="checkbox" />
+								<span class="checkbox__span">Status</span>
+							</label>
+						</div>
+
+						<div>
+							<label class="checkbox__container" id="checkbox__email">
+								<span class="checkbox__span-email"> carmella@hotmail.com </span>
+							</label>
+						</div>
+
+						<div>
+							<span class="checkbox__span-amount" id="checkbox__amount">
+								$737.00
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="payment__footer">
+					<div>
+						<p class="payment__footer-description">0 of 4 row(s) selected.</p>
+					</div>
+
+					<div class="payment__buttons">
+						<button class="payment__button">Previous</button>
+						<button class="payment__button">Next</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Catalog -->
+			<div class="catalog__container container">
+				<div class="catalog__content">
+					<h3 class="catalog__title">Tags</h3>
+
+					<div class="catalog__grid">
+						<div class="catalog__items">
+							<span class="catalog__span">Blender</span>
+							<span class="catalog__span">Browser</span>
+							<span class="catalog__span">Dev</span>
+							<span class="catalog__span">Microsoft</span>
+							<span class="catalog__span">Python</span>
+						</div>
+
+						<div class="catalog__items">
+							<span class="catalog__span">Modeling</span>
+							<span class="catalog__span">Unity</span>
+							<span class="catalog__span">Websocket</span>
+							<span class="catalog__span">VR</span>
+							<span class="catalog__span">NodeJS</span>
+						</div>
+
+						<div class="catalog__items">
+							<span class="catalog__span">VS Code</span>
+							<span class="catalog__span">React</span>
+							<span class="catalog__span">Steam</span>
+							<span class="catalog__span">Front-end</span>
+							<span class="catalog__span">Chip</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Cryptowallet -->
+			<div class="crypt__container container">
+				<div class="crypt__content">
+					<div class="crypt__filters">
+						<span class="crypt__filter" id="active-link">All</span>
+						<span class="crypt__filter">USDT</span>
+						<span class="crypt__filter">BUSD</span>
+						<span class="crypt__filter">
+							<i class="bx bx-heart"></i>
+						</span>
+					</div>
+
+					<div class="crypt__search">
+						<i class="bx bx-search"></i>
+						<input
+							type="search"
+							class="crypt__input"
+							placeholder="Search ETH, BTC.."
+						/>
+					</div>
+
+					<div class="crypt__list">
+						<!-- 1 -->
+						<div class="crypt__item">
+							<div class="crypt__img">
+								<img src="../img/bitcoin.svg" alt="bitcoin" width="50px" />
+								BTC
+							</div>
+
+							<span>
+								<i class="bx bx-heart"></i>
+							</span>
+						</div>
+						<!-- 2 -->
+						<div class="crypt__item">
+							<div class="crypt__img">
+								<img
+									src="../img/ethereum-eth.svg"
+									alt="ethereum"
+									width="50px"
+								/>
+								ETH
+							</div>
+							<span>
+								<i class="bx bxs-heart"></i>
+							</span>
+						</div>
+						<!-- 3 -->
+						<div class="crypt__item">
+							<div class="crypt__img">
+								<img src="../img/dogecoin.svg" alt="dogecoin" width="50px" />
+								Doge
+							</div>
+							<span>
+								<i class="bx bx-heart"></i>
+							</span>
+						</div>
+						<!-- 4 -->
+						<div class="crypt__item">
+							<div class="crypt__img">
+								<img src="../img/bytecoin.svg" alt="bytecoin" width="50px" />
+								BYT
+							</div>
+							<span>
+								<i class="bx bx-heart"></i>
+							</span>
+						</div>
+						<!-- 5 -->
+						<div class="crypt__item">
+							<div class="crypt__img">
+								<img src="../img/allcoin.svg" alt="allcoin" width="50px" />
+								ALL
+							</div>
+							<span>
+								<i class="bx bx-heart"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
